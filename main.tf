@@ -9,8 +9,9 @@ module "iam_user_createtion" {
 }
 
 module "ec2-instace-creation" {
-  source        = "./modules/ec2"
+  source         = "./modules/ec2"
   instance_types = var.instance_type
-  ami_ids =         var.ami_id
-  key_pair_new = var.key_pair
+  intance_counts = var.instance_count
+  ami_ids        = var.ami_id
+  key_pair_new   = var.key_pair
 }

@@ -9,3 +9,8 @@ variable "instance_types" {
 variable "key_pair_new" {
   type = string
 }
+
+variable "intance_counts" {
+  type = number
+  default = 3
+}
