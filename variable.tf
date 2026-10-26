@@ -22,5 +22,5 @@ variable "key_pair" {
 
 variable "instance_count" {
   type    = number
-  default = 3
+  default = 2
 }
