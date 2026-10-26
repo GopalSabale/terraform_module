@@ -1,0 +1,5 @@
+s3_bucket      = "demo--00--004"
+iam_user       = "gopal_ss"
+ami_id        = "ami-022374b883d9d7931"
+instance_type = "t2.nano"
+key_pair = "new-linux-kp"
