@@ -24,3 +24,12 @@ variable "instance_count" {
   type    = number
   default = 2
 }
+
+variable "instance_for_each" {
+  type = map(string)
+  default = {
+    qa   = "t2.nano"
+    prod = "t3a.small"
+  }
+
+}

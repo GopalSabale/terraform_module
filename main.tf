@@ -15,3 +15,10 @@ module "ec2-instace-creation" {
   ami_ids        = var.ami_id
   key_pair_new   = var.key_pair
 }
+
+module "ec2-instace_for_each" {
+  source       = "./modules/ec2"
+  for_eaches   = var.for_each
+  ami_ids      = var.ami_id
+  key_pair_new = var.key_pair
+}
