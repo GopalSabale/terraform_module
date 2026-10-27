@@ -17,8 +17,9 @@ module "ec2-instace-creation" {
 }
 
 module "ec2-instace_for_each" {
-  source       = "./modules/ec2"
-  for_eaches   = var.for_each
-  ami_ids      = var.ami_id
-  key_pair_new = var.key_pair
+  source         = "./modules/ec2"
+  instance_types = var.instance_type
+  for_eaches = var.instance_for_each
+  ami_ids        = var.ami_id
+  key_pair_new   = var.key_pair
 }
